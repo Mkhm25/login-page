@@ -1,0 +1,93 @@
+body{
+    background-image: url(img/volly.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: font1;
+}
+.login>label{
+    color: aliceblue;
+    margin-top: 20px;
+}
+
+.login{
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: start;
+    place-items: center;
+    top: 6rem;
+    right: 30rem;
+    border-radius: 20px;
+    padding: 2rem;
+    background-color: rgba(15, 14, 14, 0.388);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(216, 215, 212, 0.852);
+
+}
+.login>input{
+    width: 300px;
+    height: 40px;
+    margin-top: 30px;
+    background-color: rgba(250, 252, 253, 0.752);
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    padding: 5px;
+}
+.login>a{
+    width: 300px;
+    height: 40px;
+    margin-top: rem;
+    text-decoration: none;
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 40px;
+    padding-top: 20px;
+    color: rgb(249, 249, 250);
+}
+.login>a:hover{
+    background-color: rgb(236, 237, 237);
+    color: black;
+    box-shadow: 0 0 10px ;
+}
+.login>span{
+    color: aliceblue;
+}
+#toggle {
+    visibility:hidden;
+    margin-top: 8px;
+}
+#checkbox{
+    width: 40px;
+    height: 20px;
+    background-color:rgba(209, 204, 204, 0.252);
+    transition: 500ms;
+    cursor: pointer;
+    display: flex;
+    justify-content: left;
+    align-items:center;
+   
+    border-radius: 10px;
+}
+#checkbox::after{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    margin-left: 2px;
+    background-color: rgb(241, 241, 245);
+    border-radius: 100%;
+    transition: 500ms;
+}
+#toggle:checked+#checkbox::after{
+    background-color: rgb(3, 3, 254);
+    margin-left: 22px;
+}
+
+@font-face{
+    font-family: font1;
+    src: url(font/Rubik-Regular.ttf);
+}
